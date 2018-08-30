@@ -1,0 +1,48 @@
+﻿*
+{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+body
+{
+	margin:3;
+	color:black;
+	background-color:lime;
+}
+
+#pagina
+{
+	position:relative;
+	overflow:hidden;
+	
+	width:800px;
+	background-color:aqua;
+	
+	margin:auto;
+}
+
+div div
+{
+	float:center;
+}
+
+
+#cabecera{
+	width:800px;
+	height:100px;
+	
+	background-color:#FFFF99;
+}
+
+
+#pie{
+	width:800px;
+	height:50px;
+	
+	background-color:#FFFFCC;
+	background-color:#CCFF66;
+}
+
+

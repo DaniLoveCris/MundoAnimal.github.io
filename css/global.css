@@ -1,0 +1,173 @@
+*
+{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+
+/* Diseño fluido */
+div.fluido
+{
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.fluido div
+{
+	float:left;
+}
+
+/* Diseño absoluto */
+div.absoluto, div.absoluto div
+{
+	position:absolute;
+}
+
+/* Diseño de celdas */
+body > div.tabla
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.tabla  div[id]
+{
+	display:table-cell;
+	text-align:center;
+	vertical-align:top;
+}
+
+/* Diseño flexible */
+body > div.columnas, body > div.filas
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.columnas
+{
+	display:box;
+	display:-moz-box;
+	display:-webkit-box;
+	
+	
+	box-orient:horizontal;
+	-moz-box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+}
+
+div.filas
+{
+	display:box;
+	display:-moz-box;
+	display:-webkit-box;
+	
+	box-orient:vertical;
+	-moz-box-orient:vertical;
+	-webkit-box-orient:vertical;
+}
+
+div.columnas > div, div.filas > div
+{
+	height:100px;
+}
+
+div.columnas, div.filas
+{
+	height:auto !important;
+}
+
+/* enlaces */
+a
+{
+	outline:none;
+}
+
+/* menus desplegables */
+ol.V, ol.V  ol, ol.H, ol.H  ol, ol.HV, ol.HV  ol, ol.VV, ol.VV  ol
+{
+	/* background-color:orange; */
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+ol.V ol, ol.H ol, ol.HV ol
+{
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
+ol.VV ol
+{
+	display:none;
+}
+
+ol.V  li:hover > ol, ol.H  li:hover > ol, ol.HV  li:hover > ol, ol.VV  li:hover > ol
+{
+	display:block;
+	z-index:10;
+}
+
+/* Menu horizontal */
+ol.H
+{
+	position:relative;
+}
+
+ol.H  li
+{
+	display:inline-block;
+}
+
+ol.H ol
+{
+	width:100%;
+	top:100%;
+	left:0;
+}
+
+/* Menu vertical */
+ol.V  li
+{
+	position:relative;
+}
+
+ol.V ol
+{
+	left:100%;
+	top:0;
+}
+
+/* Menu Horizontal-Vertical */
+ol.HV, ol.HV  li
+{
+	position:relative;
+}
+
+ol.HV > li
+{
+	display:inline-block;
+}
+
+ol.HV  ol
+{
+	width:100%;
+	top:100%;
+	left:0;
+}
+
+ol.HV ol ol
+{
+	left:100%;
+	top:0;
+}
+
+
+

@@ -1,0 +1,49 @@
+﻿*
+{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+body{
+	margin:0;
+}
+
+#pagina{
+	position:relative;
+	overflow:hidden;
+	
+	width:800px;
+	background-color:aqua;
+	
+	margin:auto;
+}
+
+div div{
+	float:left;
+}
+
+#cabecera{
+	width:800px;
+	height:100px;
+	
+	background-color:#FFFF99;
+}
+
+
+#contenido{
+	width:800px;
+	height:500px;
+	
+	background-color:#FFFFCC;
+}
+
+#pie{
+	width:800px;
+	height:50px;
+	
+	background-color:#FFFFCC;
+	background-color:#CCFF66;
+}
+
+

@@ -1,0 +1,10 @@
+﻿#cabecera
+{
+	height:auto;
+}
+
+#cabecera h1
+{
+	text-align:center;
+	color:maroon;
+}

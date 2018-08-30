@@ -1,0 +1,107 @@
+﻿*
+{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+body
+{
+	margin:0;
+	background-color:yellow;
+}
+
+
+#pagina
+{
+	width:800px;
+	height:500px;
+	background-color:aqua;
+	
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#cabecera
+{
+	width:800px;
+	height:100px;
+	background-color:grey;
+}
+
+
+#menu-horizontal
+{
+	width:800px;
+	height:50px;
+	background-color:#CCFF66;
+}
+
+
+#menu-vertical
+{
+	width:150px;
+	height:500px;
+	background-color:#FF9999;
+}
+
+
+#contenido
+{
+	width:650px;
+	height:500px;
+	background-color:#FFFFCC;
+	padding:20px;
+	height:auto;
+	text-align:justify;
+	columns:2 50px;
+	column-rule:solid thin olive;
+}
+
+
+#contenido h1
+{
+	margin-top:0;
+	text-shadow:4px 8px 5px red;
+	column-span:all;
+}
+
+
+#contenido h1+p
+{
+	margin-top:0;
+}
+
+
+#contenido img[alt="tierra"]
+{
+	padding:5px;
+	border:double green 10px;
+	background-color:#9FC;
+	background-clip:padding-box;
+	float:right;
+	margin:10PX 10PX;
+	border-radius:10px;
+}
+
+#contenido img[alt="tierra"]:hover
+{
+			transform: rotate(-10deg);
+            -webkit-transform: rotate(-10deg); // IE 9
+            -moz-transform: rotate(-10deg); // Firefox
+            -o-transform: rotate(-10deg); // Safari and Chrome
+	
+}
+
+
+#contenido P:first-letter
+{
+	color:maroon;
+	font-weight:700;
+	padding:1px;
+	border:solid 1px orange;
+	border-radius:10px;
+	background-color:lime;
+	margin-right:1px;
+}
